@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>P&aacute;gina 2</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>Enviando con evento</h1>
+    <ion-list>
+        <ion-item *ngFor="let mutante of mutantes" (click)="pagina3(mutante)">
+            <ion-label>
+                {{mutante.nombre}}
+            </ion-label>
+        </ion-item>
+    </ion-list>
+    <hr>
+    <h1>Enviando con HTML</h1>
+    <ion-list>
+        <ion-item *ngFor="let mutante of mutantes" routerLink="/pagina3" [queryParams]="mutante">
+            <ion-label>
+                {{mutante.nombre}}
+            </ion-label>
+        </ion-item>
+    </ion-list>
+</ion-content>

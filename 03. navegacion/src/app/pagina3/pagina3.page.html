@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>{{mutante.nombre}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <h3 text-center>
+        {{mutante.poder}}
+    </h3>
+    <ion-button color="primary" expand="block" (click)="irAtras()">
+        Atr&aacute;s con evento
+    </ion-button>
+    <ion-button color="secondary" expand="block" (click)="home()">
+        Home
+    </ion-button>
+    <ion-button color="danger" expand="block" routerLink="/pagina2">
+        Atr&aacute;s sin evento
+    </ion-button>
+</ion-content>

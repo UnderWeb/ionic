@@ -1,0 +1,12 @@
+[
+    {
+        "nombre": "Tabs",
+        "icono": "grid",
+        "url": "/"
+    },
+    {
+        "nombre": "Ajustes 2",
+        "icono": "hammer",
+        "url": "/ajustes2"
+    }
+]

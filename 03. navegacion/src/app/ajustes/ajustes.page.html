@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-menu-button menu="first"></ion-menu-button>
+        </ion-buttons>
+        <ion-title>
+            Ajustes
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button color="primary" expand="block" (click)="home()">
+        Home
+    </ion-button>
+    <ion-button color="tertiary" expand="block" (click)="showModal()">
+        Modal
+    </ion-button>
+    <div *ngIf="data">
+        <h2 text-center>
+            Datos recibidos
+        </h2>
+        <ul>
+            <li>Nombre: {{data.nombre}}</li>
+            <li>Edad: {{data.edad}}</li>
+            <li>Coordenadas:
+                <ul>
+                    <li>
+                        Latitud: {{data.coords.lat}}
+                    </li>
+                    <li>
+                        Longitud: {{data.coords.lng}}
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</ion-content>

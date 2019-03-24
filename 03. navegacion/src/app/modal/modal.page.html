@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-title>
+            Modal
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>
+        Modal
+    </h1>
+    <ul>
+        <li>
+            Nombre: {{nombre}}
+        </li>
+        <li>
+            Edad: {{edad}}
+        </li>
+    </ul>
+    <ion-button color="primary" expand="block" (click)="cerrarConParametros()">
+        Cerrar con par&aacute;metros
+    </ion-button>
+    <ion-button color="tertiary" expand="block" (click)="cerrarSinParametros()">
+        Cerrar sin par&aacute;metros
+    </ion-button>
+</ion-content>
